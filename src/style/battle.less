@@ -1,0 +1,155 @@
+.battle-container {
+  display: flex;
+
+  // 每个玩家容器
+  .player-container {
+    flex: 1;
+    margin-top: 20px;
+  }
+  // 第一阶段： 输入
+  .battle-input-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    .input-player {
+      flex: 1;
+
+      .input-title {
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 200;
+      }
+      .input-content {
+        width: 70%;
+        margin: 10px 0 0 15%;
+        border-radius: 3px;
+        padding: 5px;
+        border: 1px solid rgba(0,0,0,.43);
+        font-size: 16px;
+        text-indent: .5em;
+      }
+      .input-submit {
+        color: #e6e6e6;
+        background-color: #0a0a0a;
+        border: none;
+        font-size: 16px;
+        border-radius: 3px;
+        width: 40%;
+        text-align: center;
+        display: block;
+        padding: 7px 0;
+        margin: 10px auto;
+      }
+
+      .battle-submit-disable {
+        background-color: #aaa;
+      }
+    }
+  }
+
+  // 第一阶段：确认按钮
+  .battle-btn {
+    border: none;
+    background-color: transparent;
+    color: red;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+
+    &:hover {
+      border: 1px solid red;
+      cursor: pointer;
+    }
+  }
+
+  // 第二阶段：确认
+  .confirm-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .user-icon {
+      width: 150px;
+      border-radius: 150px;
+    }
+    .name {
+      font-size: 20px;
+      text-align: center;
+      margin: 10px 0 10px 0;
+    }
+    .reset-btn {
+      background-color: transparent;
+      border: none;
+      color: red;
+      font-size: 18px;
+    }
+  }
+
+  // 第三阶段： 比赛结果
+  .battle-result-container {
+
+    .result {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 200;
+      margin: 20px 0;
+    }
+
+    .score {
+      text-align: center;
+    }
+
+    .user-icon {
+      width: 150px;
+      border-radius: 150px;
+      margin: 20px auto;
+      display: flex;
+    }
+
+    .login {
+      text-align: center;
+      margin: 10px auto;
+      font-weight: 700;
+    }
+    .fullname {
+      text-align: center;
+      margin: 10px auto;
+    }
+    .location {
+      text-align: center;
+      margin: 10px auto;
+    }
+    .follower {
+      text-align: center;
+      margin: 10px auto;
+    }
+    .following {
+      text-align: center;
+      margin: 10px auto;
+    }
+    .public-repos {
+      text-align: center;
+      margin: 10px auto;
+    }
+
+  }
+}
+.rebattle-btn {
+  border: none;
+  background-color: transparent;
+  width: 200px;
+  font-size: 20px;
+  height: 40px;
+  color: red;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid red;
+  }
+}

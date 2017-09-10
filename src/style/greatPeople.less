@@ -1,0 +1,48 @@
+.greatPeople-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .greatPeopleItem {
+    margin: 10px 0;
+
+    .rank {
+      text-align: center;
+    }
+
+    .user-icon {
+      width: 150px;
+      border-radius: 150px;
+    }
+
+    .login {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}
+
+.loadmore-container {
+  display: flex;
+
+  .loadmore-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #777;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 200px;
+    justify-content: center;
+
+    &:hover {
+      border: 1px solid red;
+    }
+  }
+
+  .totalCount {
+    justify-content: right;
+    font-size: 14px;
+    margin: auto 0;
+  }
+}
